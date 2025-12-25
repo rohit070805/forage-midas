@@ -15,6 +15,9 @@ public class TransactionRecord {
     private UserRecord recipient;
 
     private float amount;
+    
+    // NEW FIELD
+    private float incentive;
 
     public TransactionRecord() {
     }
@@ -51,5 +54,14 @@ public class TransactionRecord {
 
     public void setAmount(float amount) {
         this.amount = amount;
+    }
+
+    // NEW GETTER & SETTER
+    public float getIncentive() {
+        return incentive;
+    }
+
+    public void setIncentive(float incentive) {
+        this.incentive = incentive;
     }
 }
